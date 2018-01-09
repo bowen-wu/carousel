@@ -17,9 +17,6 @@ h1,h2,h3,h4,h5,h6{font-weight: normal;}
     display: flex;
     transition: all 1s;
 }
-.window > .carousel > li{
-
-}
 .window > .carousel > li > img{
     vertical-align: top;
 }
@@ -33,9 +30,6 @@ h1,h2,h3,h4,h5,h6{font-weight: normal;}
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.index > ul{
-
 }
 .index > ul > li{
     height: 12px;
