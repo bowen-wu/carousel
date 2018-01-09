@@ -11,17 +11,14 @@ $(() => {
             index = indexInner
         })
     }).eq(0).addClass('active')
-
     let timer = null
-    timer = setTimer()
-
+    timer = autoPlay()
     $carousel.hover(() => {
         clearInterval(timer)
     }, () => {
-        timer = setTimer()
+        timer = autoPlay()
     })
-
-    function setTimer() {
+    function autoPlay() {
         return setInterval(() => {
             // 如果用 if 判断，那么就需要使用 $index.eq(index).triggerHandler('click')
             // if(index >= $index.length){
@@ -31,5 +28,4 @@ $(() => {
             $index.eq(index % $index.length).triggerHandler('click')
         }, 2000)
     }
-
 })
