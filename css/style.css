@@ -1,0 +1,52 @@
+*{ margin:0; padding:0; }
+li{list-style: none;}
+a{text-decoration:none;}
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+.clearfix::after{content:"";display:block;clear:both;}
+
+
+.window{  
+    /* 在视口/窗口定宽、overflow和居中 */
+    width: 600px; 
+    overflow: hidden;
+    display: flex;
+    margin: 100px auto 0;
+}
+.window > .carousel{
+    /* 在 carousel transform */
+    display: flex;
+    transition: all 1s;
+}
+.window > .carousel > li{
+
+}
+.window > .carousel > li > img{
+    vertical-align: top;
+}
+
+
+
+
+
+.index{
+    margin: 20px 0 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.index > ul{
+
+}
+.index > ul > li{
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: #FBA442;
+    float: left;
+    margin: 0 6px;
+    transition: all 0.3s;
+}
+.index > ul > li.active{
+    transform: scale(1.2);
+    background-color: #4E1806;
+}
