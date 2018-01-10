@@ -4,43 +4,37 @@ a{text-decoration:none;}
 h1,h2,h3,h4,h5,h6{font-weight: normal;}
 .clearfix::after{content:"";display:block;clear:both;}
 
-
-.window{  
-    /* 在视口/窗口定宽、overflow和居中 */
-    width: 600px; 
+.window{
+    margin: 100px auto 20px;
+    width: 600px;
     overflow: hidden;
     display: flex;
-    margin: 100px auto 0;
 }
-.window > .carousel{
-    /* 在 carousel transform */
+.window > .wrapper{
     display: flex;
-    transition: all 0.5s;
+    transition: transform 0.5s;
 }
-.window > .carousel > li > img{
+.window > .wrapper > li > img{
     vertical-align: top;
 }
 
-
-
-
-
 .index{
-    margin: 20px 0 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+}
+.index > ul{
+    display: inline-block;
+    vertical-align: top;
 }
 .index > ul > li{
+    float: left;
     height: 12px;
     width: 12px;
     border-radius: 50%;
-    background-color: #FBA442;
-    float: left;
+    background-color: #FBAB51;
     margin: 0 6px;
-    transition: all 0.3s;
+    transition: all 0.2s;
 }
 .index > ul > li.active{
-    transform: scale(1.2);
     background-color: #4E1806;
+    transform: scale(1.2);
 }
