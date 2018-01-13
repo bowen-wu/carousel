@@ -9,13 +9,17 @@ h1,h2,h3,h4,h5,h6{font-weight: normal;}
     width: 600px;
     overflow: hidden;
     display: flex;
+    cursor: pointer;
+    border-radius: 6px;
 }
 .window > .wrapper{
     display: flex;
+    border-radius: 6px;
     transition: transform 0.5s;
 }
 .window > .wrapper > li > img{
     vertical-align: top;
+    border-radius: 6px;
 }
 
 .index{
@@ -33,8 +37,11 @@ h1,h2,h3,h4,h5,h6{font-weight: normal;}
     background-color: #FBAB51;
     margin: 0 6px;
     transition: all 0.2s;
+    cursor: pointer;
+    opacity: 0.6;
 }
 .index > ul > li.active{
     background-color: #4E1806;
     transform: scale(1.2);
+    opacity: 1;
 }
