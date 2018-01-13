@@ -12,6 +12,14 @@ $(() => {
     },() => {
         timer = autoPlay()
     })
+    $(document).on('visibilitychange',() => {
+        console.log(document.hidden)
+        if(document.hidden){
+            clearInterval(timer)
+        }else{
+            timer = autoPlay()
+        }
+    })
 
     // 工具函数
     function clickEvent() {
