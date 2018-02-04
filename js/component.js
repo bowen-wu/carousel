@@ -1,8 +1,9 @@
-function Carousel({clickIndex,picContainer,picNum,picWidth}) {
+function Carousel({clickIndex,picContainer,picNum,picWidth,duration}) {
     this.clickIndex = clickIndex
     this.picContainer = picContainer
     this.picNum = picNum
     this.picWidth = picWidth
+    this.duration = duration
     this.init()
 }
 Carousel.prototype.init = function () {
@@ -40,6 +41,6 @@ Carousel.prototype.autoPlay = function () {
     return setInterval(() => {
         this.index++
         this.clickIndex.eq(this.index % this.picNum).triggerHandler('click')
-    }, 2500)
+    }, this.duration)
 }
 
